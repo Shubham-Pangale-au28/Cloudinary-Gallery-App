@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 app.get('/photos', (req, res) =>{
     console.log("Cloudinary called");
     cloudinary.api
-        .resource({
+        .resources({
             type: 'upload',
             prefix: 'favs'
         })
